@@ -1,0 +1,11 @@
+{
+  "microbes": {
+    "Logo": {
+      "title": "React logo"
+    },
+    "MainHeader": {
+      "learn": "Learn ReactJS",
+      "title": "Edit <0>{{path}}</0> and save to reload"
+    }
+  }
+}
