@@ -13,12 +13,11 @@ export const MainHeader: React.FC = () => {
         <Logo />
         <p>
           <Trans
+            defaults="<0>{{path}}</0>"
             i18nKey="microbes.MainHeader.title"
             values={{ path: "src/ui/ecosystem/index.tsx" }}
             components={[<code />]}
-          >
-            {/* Edit <code>src/App.tsx</code> and save to reload */}
-          </Trans>
+          />
         </p>
         <div>
           <ThemeToggle />

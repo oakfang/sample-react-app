@@ -6,6 +6,9 @@
     "MainHeader": {
       "learn": "Learn ReactJS",
       "title": "Edit <0>{{path}}</0> and save to reload"
+    },
+    "ThemeToggle": {
+      "title": "Toggle Dark Theme"
     }
   }
 }
