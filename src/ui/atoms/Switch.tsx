@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import styled from "styled-components";
 
 const SwitchButton = styled.button`
@@ -56,7 +56,7 @@ interface SwitchProps
   onChange: (value: boolean) => void;
 }
 
-export const Switch: React.FC<SwitchProps> = ({
+export const Switch: FunctionComponent<SwitchProps> = ({
   value,
   onChange,
   ...props
