@@ -1,5 +1,5 @@
-import React, { FunctionComponent } from "react";
-import styled from "styled-components";
+import React, { FunctionComponent } from 'react';
+import styled from 'styled-components';
 
 const SwitchButton = styled.button`
   position: relative;
@@ -12,7 +12,7 @@ const SwitchButton = styled.button`
     outline: none;
   }
 
-  &[aria-checked="true"] {
+  &[aria-checked='true'] {
     .slider {
       background-color: ${props => props.theme.palette.primary};
 
@@ -35,7 +35,7 @@ const SwitchButton = styled.button`
 
     &:before {
       position: absolute;
-      content: "";
+      content: '';
       height: 26px;
       width: 26px;
       left: 4px;
@@ -50,7 +50,7 @@ const SwitchButton = styled.button`
 interface SwitchProps
   extends Omit<
     React.ButtonHTMLAttributes<HTMLButtonElement>,
-    "value" | "onChange" | "OnClick" | "role" | "children"
+    'value' | 'onChange' | 'OnClick' | 'role' | 'children'
   > {
   value: boolean;
   onChange: (value: boolean) => void;

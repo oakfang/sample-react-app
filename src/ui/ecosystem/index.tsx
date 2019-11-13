@@ -1,7 +1,7 @@
-import React, { lazy, Suspense } from "react";
-import BlankScreen from "ui/organisms/BlankScreen";
-import { Theme } from "providers/Theme";
-const MainView = lazy(() => import("ui/organisms/MainView"));
+import React, { lazy, Suspense } from 'react';
+import BlankScreen from 'ui/organisms/BlankScreen';
+import { Theme } from 'providers/Theme';
+const MainView = lazy(() => import('ui/organisms/MainView'));
 
 const loadingIndicator = <BlankScreen />;
 

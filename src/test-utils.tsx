@@ -1,25 +1,25 @@
-import React from "react";
-import i18n from "i18next";
-import { initReactI18next, I18nextProvider } from "react-i18next";
-import { render as _render } from "@testing-library/react";
-import { Theme } from "providers/Theme";
+import React from 'react';
+import i18n from 'i18next';
+import { initReactI18next, I18nextProvider } from 'react-i18next';
+import { render as _render } from '@testing-library/react';
+import { Theme } from 'providers/Theme';
 
 i18n.use(initReactI18next).init({
   fallbackLng: false,
-  lng: "cimode",
+  lng: 'cimode',
   interpolation: {
-    escapeValue: false
+    escapeValue: false,
   },
   react: {
-    wait: false
+    wait: false,
   },
   resources: {
     en: {
       core: {
-        test: "test"
-      }
-    }
-  }
+        test: 'test',
+      },
+    },
+  },
 });
 
 const Wrapper: React.FC = ({ children }) => {

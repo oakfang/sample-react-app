@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import { useTranslation, Trans } from "react-i18next";
-import { CenteredText, Link } from "ui/atoms";
-import { Logo } from "ui/microbes/Logo";
-import { ThemeToggle } from "ui/microbes/ThemeToggle";
+import React from 'react';
+import styled from 'styled-components';
+import { useTranslation, Trans } from 'react-i18next';
+import { CenteredText, Link } from 'ui/atoms';
+import { Logo } from 'ui/microbes/Logo';
+import { ThemeToggle } from 'ui/microbes/ThemeToggle';
 
 export const MainHeader: React.FC = () => {
   const { t } = useTranslation();
@@ -15,14 +15,14 @@ export const MainHeader: React.FC = () => {
           <Trans
             defaults="<0>{{path}}</0>"
             i18nKey="microbes.MainHeader.title"
-            values={{ path: "src/ui/ecosystem/index.tsx" }}
+            values={{ path: 'src/ui/ecosystem/index.tsx' }}
             components={[<code />]}
           />
         </p>
         <div>
           <ThemeToggle />
         </div>
-        <Link href="https://reactjs.org">{t("microbes.MainHeader.learn")}</Link>
+        <Link href="https://reactjs.org">{t('microbes.MainHeader.learn')}</Link>
       </Header>
     </CenteredText>
   );
